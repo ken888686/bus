@@ -1,6 +1,7 @@
 <script setup>
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
+import SearchNav from "@/components/SearchNav.vue";
 </script>
 
 <template>

@@ -1,7 +1,10 @@
 <script setup>
+import SearchNav from "../components/SearchNav.vue";
 </script>
 <template>
-  <div class="bg-main h-100"></div>
+  <div class="bg-main h-100">
+    <SearchNav />
+  </div>
 </template>
 <style lang="scss" scoped>
 .bg-main {
