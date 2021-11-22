@@ -12,5 +12,6 @@ import SearchNav from "../components/SearchNav.vue";
     linear-gradient(143.04deg, #70ebb0 13.42%, #40caca 84.3%);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: bottom, bottom, center;
+  background-size: 100%, 100%, 100%;
 }
 </style>
