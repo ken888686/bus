@@ -10,7 +10,9 @@
 export default {
   name: 'Footer',
   components: {},
-  data() {},
+  data() {
+    return {};
+  },
   methods: {},
   mounted() {},
 };
