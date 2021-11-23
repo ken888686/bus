@@ -1,8 +1,8 @@
 <template>
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg nav-light bg-light">
     <div class="container">
       <a class="navbar-brand" href="/">
-        <img src="../assets/logo.png" alt="logo" />
+        <img src="../assets/logo.svg" alt="logo" />
       </a>
       <button
         class="navbar-toggler"
@@ -18,10 +18,16 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#">找公車</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">找客運</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">找單車</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">轉乘資訊</a>
           </li>
         </ul>
       </div>
