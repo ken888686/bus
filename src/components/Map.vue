@@ -2,10 +2,7 @@
   <div class="map" id="map"></div>
 </template>
 <script>
-import { Map, View } from 'ol';
-import Tile from 'ol/layer/Tile';
-import OSM from 'ol/source/OSM';
-import 'ol/ol.css';
+import L from 'leaflet';
 
 export default {
   name: 'Map',
@@ -17,20 +14,18 @@ export default {
   },
   methods: {
     initMap() {
-      this.map = new Map({
-        target: 'map',
-        layers: [
-          new Tile({
-            source: new OSM(),
-          }),
-        ],
-        view: new View({
-          projection: 'EPSG:4326',
-          center: [120.9738819, 23.97565],
-          minZoom: 10,
-          zoom: 12,
-        }),
+      // 臺灣地理中心
+      // 120.9738819, 23.97565
+      this.map = L.map('map', {
+        center: [23.97565, 120.9738819],
+        // 可以嘗試改變 zoom 的數值
+        // 筆者嘗試後覺得 18 的縮放比例是較適當的查詢範圍
+        zoom: 18,
       });
+
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 8,
+      }).addTo(this.map);
     },
   },
   mounted() {
