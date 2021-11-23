@@ -15,15 +15,14 @@ The F2E Week 3
 
 ### 六角學院
 
-- [figma-自行車道地圖資訊整合網](https://www.figma.com/file/6UVRuBcqKn2dvOKCzU1Nfs)
-- [ching](https://2021.thef2e.com/users/6296427084285739055)
+- [figma-全台公車動態時刻查詢應用服務](https://www.figma.com/file/mAZZ9AMvcobxfAKDjXTZxN)
+- [Shiaohan](https://2021.thef2e.com/users/6296427084285739387)
 - [Bootstrap 5](https://bootstrap5.hexschool.com/)
 - [Bootstrap Icons](https://icons.getbootstrap.com/)
 
 ### 其他資源
 
 - [Vue CLI](https://cli.vuejs.org/zh/)
-- [Vite](https://github.com/vitejs/vite)
 - [vue-router](https://github.com/vuejs/vue-router)
 - [vue3-openlayers](https://github.com/MelihAltintas/vue3-openlayers)
 - [vue-leaflet](https://github.com/vue-leaflet/vue-leaflet)
