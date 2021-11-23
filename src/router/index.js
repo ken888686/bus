@@ -9,20 +9,6 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home,
-    children: [
-      {
-        path: "bus",
-        component: Bus,
-      },
-      {
-        path: "stop",
-        component: Stop,
-      },
-      {
-        path: "transport",
-        component: Transport,
-      },
-    ],
   },
 ];
 

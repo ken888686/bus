@@ -3,7 +3,9 @@ import SearchNav from "../components/SearchNav.vue";
 </script>
 <template>
   <div class="bg-main h-100">
-    <SearchNav />
+    <div class="search">
+      <SearchNav />
+    </div>
   </div>
 </template>
 <style lang="scss" scoped>
@@ -13,5 +15,8 @@ import SearchNav from "../components/SearchNav.vue";
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: bottom, bottom, center;
   background-size: 100%, 100%, 100%;
+
+  display: flex;
+  align-items: center;
 }
 </style>

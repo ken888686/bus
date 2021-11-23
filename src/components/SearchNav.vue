@@ -1,58 +1,79 @@
 <script setup>
-import { ref } from "vue";
-
-let selectedIndex = ref(0);
-const tabs = [];
-console.log($children);
+import Bus from "@/components/Bus.vue";
+import Stop from "@/components/Stop.vue";
+import Transport from "@/components/Transport.vue";
 </script>
 <template>
-  <!-- <ul class="list-unstyled d-flex">
-    <li>
-      <router-link
-        to="/bus"
-        class="btn link-secondary px-4"
-        @click="activeTab = 1"
-        :class="{ active: activeTab === 1 ? 'active' : '' }"
+  <ul class="nav nav-pills" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button
+        class="nav-link link-secondary active"
+        id="bus-tab"
+        data-bs-toggle="tab"
+        data-bs-target="#bus"
+        type="button"
+        role="tab"
+        aria-controls="bus"
+        aria-selected="true"
       >
         找公車
-      </router-link>
+      </button>
     </li>
-    <li>
-      <router-link
-        to="/stop"
-        class="btn link-secondary px-4"
-        @click="activeTab = 2"
-        :class="{ active: activeTab === 2 ? 'active' : '' }"
+    <li class="nav-item" role="presentation">
+      <button
+        class="nav-link link-secondary"
+        id="stop-tab"
+        data-bs-toggle="tab"
+        data-bs-target="#stop"
+        type="button"
+        role="tab"
+        aria-controls="stop"
+        aria-selected="false"
       >
         找站牌
-      </router-link>
+      </button>
     </li>
-    <li>
-      <router-link
-        to="/transport"
-        class="btn link-secondary px-4"
-        @click="activeTab = 3"
-        :class="{ active: activeTab === 3 ? 'active' : '' }"
+    <li class="nav-item" role="presentation">
+      <button
+        class="nav-link link-secondary"
+        id="transport-tab"
+        data-bs-toggle="tab"
+        data-bs-target="#transport"
+        type="button"
+        role="tab"
+        aria-controls="transport"
+        aria-selected="false"
       >
         找客運
-      </router-link>
+      </button>
     </li>
   </ul>
-  <div class="d-flex flex-column">
-    <router-view />
-  </div> -->
-
-  <tabs>
-    <tab>bus</tab>
-    <tab>stop</tab>
-    <tab>transport</tab>
-  </tabs>
+  <div class="tab-content" id="pills-tabContent">
+    <div
+      class="tab-pane fade show active"
+      id="bus"
+      role="tabpanel"
+      aria-labelledby="bus-tab"
+    >
+      <Bus />
+    </div>
+    <div
+      class="tab-pane fade"
+      id="stop"
+      role="tabpanel"
+      aria-labelledby="stop-tab"
+    >
+      <Stop />
+    </div>
+    <div
+      class="tab-pane fade"
+      id="transport"
+      role="tabpanel"
+      aria-labelledby="transport-tab"
+    >
+      <Transport />
+    </div>
+  </div>
 </template>
 <style lang="scss" scoped>
-// a {
-//   background-color: #d4f3f1;
-//   &.active {
-//     background-color: #000;
-//   }
-// }
 </style>
