@@ -2,7 +2,8 @@
   <div class="d-flex flex-column vh-100">
     <Header />
     <div class="flex-grow-1">
-      <Map />
+      <!-- <Map /> -->
+      <SearchForm />
     </div>
     <Footer />
   </div>
@@ -12,11 +13,17 @@
 // @ is an alias to /src
 import Header from '@/components/Header.vue';
 import Map from '@/components/Map.vue';
+import SearchForm from '@/components/SearchForm.vue';
 import Footer from '@/components/Footer.vue';
 
 export default {
   name: 'Home',
-  components: { Header, Map, Footer },
+  components: {
+    Header,
+    Map,
+    SearchForm,
+    Footer,
+  },
   data() {
     return {
       testStr: '測試',
