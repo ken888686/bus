@@ -6,14 +6,31 @@
         type="search"
         placeholder="搜尋公車路線或站牌"
         aria-label="Search"
+        v-model="keyword"
       />
       <button class="btn btn-light text-nowrap" type="button">篩選</button>
     </form>
-    <div class="flex-grow-1 border border-5">s</div>
+    <div class="flex-grow-1 text-center border">
+      <span v-if="searchResult.length === 0">輸入公車路線或站牌找看看吧！</span>
+    </div>
   </div>
 </template>
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      keyword: '',
+      searchResult: [],
+    };
+  },
+  methods: {
+    search() {
+      console.log(this.keyword);
+      this.keyword = '';
+    },
+  },
+  mounted() {},
+};
 </script>
 <style lang="scss" scoped>
 .form {
