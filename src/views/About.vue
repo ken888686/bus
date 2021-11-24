@@ -1,5 +1,17 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <LocationList />
 </template>
+<script>
+import LocationList from '../components/LocationList.vue';
+
+export default {
+  data() {
+    return {};
+  },
+  components: {
+    LocationList,
+  },
+  methods: {},
+  mounted() {},
+};
+</script>
